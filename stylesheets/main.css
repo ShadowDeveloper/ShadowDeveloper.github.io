@@ -1,0 +1,25 @@
+@media only screen and (min-width: 800px or min-height 600px){
+	:root{
+		--divSize: 250px;
+		--imgSize: 225px;
+	}
+}
+:root{
+		--divSize: 500px;
+		--imgSize: 450px;
+	}
+body{
+	background: hsl(280, 60%, 50%);
+	color: black;
+	font-family: "Open Sans", sans-serif;
+	margin: auto;
+	float:center;
+    text-align:center;
+}
+:is(h1, h2, h3){
+	font-family: "Ubuntu", sans-serif;
+}
+a{
+	color: inherit;
+	font-style: italic;
+}
