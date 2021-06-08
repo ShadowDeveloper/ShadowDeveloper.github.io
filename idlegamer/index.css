@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+body {
+    color: red;
+    background: rgb(175, 175, 175);
+    background-image: url("https://img.freepik.com/free-vector/garage-interior-realistic-composition_1284-25624.jpg?size=626&ext=jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: "Press Start 2P", monospace;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 16px lightcoral;
+    animation: bg 600s infinite;
+}
+
+h1 {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    font-size: 2em;
+    animation: flash 10s infinite;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(2px 2px 1px rgb(64, 64, 64));
+    transition: 1s;
+}
+
+img:hover {
+    filter: drop-shadow(5px 5px 2.5px purple);
+}
+
+button {
+    background: red;
+    transition: 1s;
+    filter: drop-shadow(2px 2px 1px rgb(64, 64, 64));
+}
+
+button:hover {
+    filter: drop-shadow(5px 5px 2.5px purple);
+}
+
+hr {
+    width: 20%;
+    height: 2px;
+    background-color: crimson;
+    border: none;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.purchase {
+    position: relative;
+    width: 100px;
+    transform-style: preserve-3d;
+    animation: tilt 2s infinite;
+}
+
+.label {
+    position: relative;
+    width: 75px;
+    left: 100px;
+    top: -100px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 12px;
+}
+
+.stats {
+    font-family: "VT323", monospace;
+    font-size: 20px;
+}
+
+.wrapper {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur( 5.0px);
+    -webkit-backdrop-filter: blur( 5.0px);
+}
+
+#purchaseWrapper {
+    background: rgba(0, 0, 0, 0.5);
+    width: 15.625vw;
+    height: 46.2962963vw;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    float: center;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    /*overflow-x:hidden;*/
+    border-color: #444;
+    border-style: dashed;
+    border-radius: 2.5%;
+}
+
+#statsWrapper {
+    background: rgba(0, 0, 0, 0.25);
+    width: 13.0208333vw;
+    height: 46.2962963vw;
+    overflow: auto;
+    text-align: center;
+    border-color: #444;
+    border-style: dashed;
+    border-radius: 2.5%;
+}
+
+#rankPurchase {
+    width: 150px;
+    margin-right: 50px;
+}
+
+#score {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+    width: 33.33%;
+    height: auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+    word-wrap: break-word;
+}
+
+#controller {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%) !important;
+    animation: effects 300s infinite;
+}
+
+@keyframes effects {
+    0% {
+        filter: hue-rotate(0deg)
+    }
+    50% {
+        filter: hue-rotate(360deg)
+    }
+    100% {
+        filter: hue-rotate(0deg)
+    }
+}
+
+@keyframes flash {
+    0% {
+        color: red;
+        text-shadow: 4px 4px 0px yellow;
+    }
+    50% {
+        color: yellow;
+        text-shadow: 4px 4px 0px red;
+    }
+    100% {
+        color: red;
+        text-shadow: 4px 4px 0px yellow;
+    }
+}
+
+@keyframes bg {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 200%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999999;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
