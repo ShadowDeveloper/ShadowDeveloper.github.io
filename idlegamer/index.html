@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A clicker game about gaming!">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Clicker, Idle, Gamer">
+    <meta name="author" content="Wyatt Darley">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Gamer</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/24321/1484179074-clipart-md.png">
+</head>
+
+<body>
+    <!--Yes, I'm aware that none of the images have alt text. It's a clicker game.-->
+    <h1 id="heading">Idle Gamer</h1>
+    <h2 id="score">0 Points</h2>
+    <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/24321/1484179074-clipart-md.png" id="controller">
+    <div id="statsWrapper" class="wrapper">
+        <div class="stats">
+        </div>
+        <div class="stats">
+            <p id="total">0</p> Total Points This Session
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="upg">0</p> Total Upgrades
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="mod">1</p>Multiplier
+        </div>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <div class="stats">
+            <p id="rank">No</p>Rank
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="reset">0</p>Resets
+        </div>
+        <hr>
+        <br>
+        <div class="stats">
+            <p id="cursor">0</p>Cursors
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="phone">0</p>Phones
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="console">0</p>Game Consoles
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="laptop">0</p>Laptops
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="mouse">0</p>Mice
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="keyboard">0</p>Keyboards
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="monitor">0</p>Monitors
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="headset">0</p>Headsets
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="desktop">0</p>Desktops
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="phoneVR">0</p>Phone VR Headsets
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="psvr">0</p>PSVR headsets
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="quest2">0</p> Oculus Quest 2s
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="vive">0</p>HTC VIVEs
+        </div>
+        <hr>
+        <div class="stats">
+            <p id="index">0</p>VALVE Indexes
+        </div>
+        <hr>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="purchaseWrapper" class="wrapper">
+        <img src="https://cdn.iconscout.com/icon/free/png-512/calculator-716-461701.png" id="modPurchase" class="purchase">
+        <p id="modLabel" class="label">Purchase a *2 multiplier</p>
+        <h4>Beginner</h4>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Cursor_icon_with_shadow.png" id="cursorPurchase" class="purchase">
+        <p id="cursorLabel" class="label">Purchase a cursor</p>
+        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/27307/iphone-clipart-md.png" id="phonePurchase" class="purchase">
+        <p id="phoneLabel" class="label">Purchase a phone </p>
+        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/37996/playstation-console-clipart-md.png" id="consolePurchase" class="purchase">
+        <p id="consoleLabel" class="label">Purchase a console </p>
+        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/30872/laptop-clipart-md.png" id="laptopPurchase" class="purchase">
+        <p id="laptopLabel" class="label">Purchase a laptop </p>
+        <h4>Intermediate</h4>
+        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/25961/mouse-clipart-md.png" id="mousePurchase" class="purchase">
+        <p id="mouseLabel" class="label">Purchase a mouse </p>
+        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/37175/keyboard-hands-clipart-md.png" id="keyboardPurchase" class="purchase">
+        <p id="keyboardLabel" class="label">Purchase a keyboard </p>
+        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/30080/lcd-widescreen-monitor-clipart-md.png" id="monitorPurchase" class="purchase">
+        <p id="monitorLabel" class="label">Purchase a monitor</p>
+        <h4>Advanced</h4>
+        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/30264/headphones-ausina-s-clipart-md.png" id="headsetPurchase" class="purchase">
+        <p id="headsetLabel" class="label"> Purchase a headset</p>
+        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/24492/pc-clipart-md.png" id="desktopPurchase" class="purchase">
+        <p id="desktopLabel" class="label">Buy a desktop</p>
+        <h4>Expert</h4>
+        <img src="https://static.thenounproject.com/png/1043530-200.png" id="phoneVRPurchase" class="purchase">
+        <p id="phoneVRLabel" class="label">
+            Purchase a phone VR headset
+        </p>
+        <img src="https://www.xperienciavirtual.es/wp-content/uploads/2019/06/ps4-vr-transparente.png" id="psvrPurchase" class="purchase">
+        <p id="psvrLabel" class="label">Purchase a PSVR headset</p>
+        <img src="https://www.androidcentral.com/sites/androidcentral.com/files/article_images/2020/09/oculusquest2-render.png" id="quest2Purchase" class="purchase">
+        <p id="quest2Label" class="label">Purchase an Oculus Quest 2</p>
+        <img src="https://www.marxentlabs.com/wp-content/uploads/2016/08/CV1_HMD_FrontPers16Feb19.png" id="vivePurchase" class="purchase">
+        <p id="viveLabel" class="label">
+            Purchase an HTC VIVE
+        </p>
+        <img src="https://www.vrone.co.uk/assets/uploads/5e6d0af7f3d96.png.webp" id="indexPurchase" class="purchase">
+        <p id="indexLabel" class="label">Purchase a VALVE Index</p>
+        <img src="https://cdn3.iconfinder.com/data/icons/energy-and-power-1-10/65/47-512.png" id="rankPurchase" class="purchase">
+        <p id="rankLabel" class="label">
+            Rank Up 1220703125000 Points!
+        </p>
+    </div>
+</body>
+<script defer src="index.js">
+</script>
+
+</html>
